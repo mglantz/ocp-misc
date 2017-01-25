@@ -3,7 +3,7 @@
 GROUP=$1
 
 if [ "$GROUP" == "" ]; then
-	echo "Azure group unset. Aborting."
+	echo "Azure group unset. Usage $0 <azure-resource-group>"
 	exit 1
 else
 	echo "Creating resource group: $GROUP in North Europe and uploading ssh key to it."
